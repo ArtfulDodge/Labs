@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>340</x>
+      <y>20</y>
+      <w>260</w>
+      <h>280</h>
+    </coordinates>
+    <panel_attributes>Point
+--
+#xcoord: double
+#ycoord: double
+--
++Point()
++Point(x: double, y: double)
++Point(x: double)
++Point(p: Point)
++setX(x: double)
++setY(y: double)
++setCoords(x: double, y: double)
++copy(p: Point)
++getX(): double
++getY(): double
++toString(): String
++equals(): boolean
++show()
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLInterface</id>
+    <coordinates>
+      <x>90</x>
+      <y>20</y>
+      <w>140</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>Comparable
+--
+compareTo(): int</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>160</x>
+      <y>20</y>
+      <w>200</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>10.0;20.0;180.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>340</x>
+      <y>360</y>
+      <w>210</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>Circle
+--
+#radius: double
+#circumference: double
+#area: double
+--
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>420</x>
+      <y>290</y>
+      <w>30</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;70.0</additional_attributes>
+  </element>
+</diagram>
