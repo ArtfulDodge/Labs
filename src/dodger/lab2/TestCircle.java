@@ -48,6 +48,7 @@ public class TestCircle
 	System.out.println();
 	
 	c1.show();
+	p1 = c1;
     }
     
     private static void allStatus()
