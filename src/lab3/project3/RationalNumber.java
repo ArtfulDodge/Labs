@@ -119,10 +119,10 @@ public class RationalNumber implements Comparable<RationalNumber>
 
 	public int compareTo(RationalNumber obj)
 	{
-		double thisNumber = numerator / denominator;
-		double objNumber = obj.getNumerator() / obj.getDenominator();
+		double thisNumber =(double)numerator / (double)denominator;
+		double objNumber = (double)obj.getNumerator() / (double)obj.getDenominator();
 		final double TOL = 0.0001; // The tolerance value
-
+		
 		if (Math.abs(thisNumber - objNumber) <= TOL)
 		{
 			return 0;
