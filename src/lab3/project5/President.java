@@ -32,4 +32,25 @@ public class President implements Speaker
 				System.out.println("Grab 'em by the p****.");
 		}
 	}
+
+	public void announce(String str)
+	{
+		switch(str)
+		{
+			case "war":
+				System.out.println("Yesterday, December 7th, 1941 - a date which " 
+						   + "will live in infamy - the United States of America " 
+						   + "was suddenly and deliberately attacked by " 
+						   + "naval and air forces of the Empire of Japan.");
+			case "trade":
+				System.out.println("This has been the worst trade deal in the history "
+						   + "of trade deals.");
+			case "peace":
+				System.out.println("General Eisenhower informs me that the forces of " 
+						   + "Germany have surrendered to the United Nations. " 
+						   + "The flags of freedom fly over all Europe.");
+			case default:
+				System.out.println("There is nothing to announce at this time.");
+ 		}
+	}
 }
